@@ -59,8 +59,8 @@ Upgrade from Yii 2.0.11
 * `yii\grid\DataColumn` filter is now automatically generated as dropdown list with localized `Yes` and `No` strings
   in case of `format` being set to `boolean`.
 
-* `yii\web\User::loginRequired()` now throws an `UnauthorizedHttpException` instead of a `ForbiddenHttpException`.
-  Check and adjust your try-catch blocks.
+* The signature of `yii\cache\Cache::getOrSet()` has been adjusted to also accept a callable and not only `Closure`.
+  If you extend this method, make sure to adjust your code.
 
 
 Upgrade from Yii 2.0.10
